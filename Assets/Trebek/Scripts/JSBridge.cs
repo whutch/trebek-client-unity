@@ -14,7 +14,8 @@ namespace Turniphead.Trebek {
         ConnectionManager connectionManager;
 
         private void Start() {
-
+            connectionManager = FindObjectOfType<ConnectionManager>();
+            RequestPlayerDetails();
         }
 
         private void Update() {
